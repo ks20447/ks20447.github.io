@@ -1091,3 +1091,15 @@ h1 em {
     border-color: currentColor
 }
 .website-qr{display:flex;gap:20px;align-items:center;margin-top:32px}.website-qr img{display:block;width:144px;height:144px;border-radius:4px;background:white}.website-qr h3{font-size:16px}.contact-inner .website-qr p{margin-top:5px;font-size:13px}.website-qr div>a{display:inline-block;margin-top:12px;text-decoration:underline;text-underline-offset:4px;font-size:13px}@media(max-width:380px){.website-qr{gap:14px}.website-qr img{width:120px;height:120px}}
+
+.project-card-evidence{display:block;width:100%;height:100%;object-fit:contain;background:white;padding:8px}.project-evidence{margin:38px 0 0}.project-evidence img{display:block;width:100%;height:auto;background:white}.project-evidence figcaption{font-size:13px;color:var(--muted);margin-top:12px}.project-context{margin-top:24px;color:var(--accent);font-size:14px}.detail-section>.text-link{margin-top:15px}
+
+/* Blend the original plot background into each theme without altering the data image. */
+.project-image-real{background:var(--surface);border-color:var(--line);isolation:isolate;padding-top:24px}
+.project-image-real .image-index{color:var(--muted);z-index:1}
+.project-card-evidence,.project-evidence img{background:transparent;mix-blend-mode:multiply}
+.project-evidence{isolation:isolate}
+:root[data-theme="dark"] .project-card-evidence,:root[data-theme="dark"] .project-evidence img{filter:invert(1) hue-rotate(180deg);mix-blend-mode:screen}
+.robot-platform{margin:36px 0 0}.robot-platform img{display:block;width:min(100%,440px);height:auto;margin:auto;border-radius:6px}.robot-platform figcaption{font-size:13px;color:var(--muted);margin-top:12px;text-align:center}.robot-platform a{text-decoration:underline;text-underline-offset:3px}
+
+.project-part{margin-top:48px;padding-top:32px;border-top:1px solid var(--line)}.project-part>p:not(.eyebrow){margin-top:18px;color:var(--muted)}.project-part .experience-points{font-size:16px}.project-video{aspect-ratio:16/9;margin:26px 0 16px;background:var(--surface);border:1px solid var(--line);border-radius:6px;overflow:hidden}.project-video iframe{display:block;width:100%;height:100%;border:0}
