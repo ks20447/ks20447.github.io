@@ -1103,3 +1103,5 @@ h1 em {
 .robot-platform{margin:36px 0 0}.robot-platform img{display:block;width:min(100%,440px);height:auto;margin:auto;border-radius:6px}.robot-platform figcaption{font-size:13px;color:var(--muted);margin-top:12px;text-align:center}.robot-platform a{text-decoration:underline;text-underline-offset:3px}
 
 .project-part{margin-top:48px;padding-top:32px;border-top:1px solid var(--line)}.project-part>p:not(.eyebrow){margin-top:18px;color:var(--muted)}.project-part .experience-points{font-size:16px}.project-video{aspect-ratio:16/9;margin:26px 0 16px;background:var(--surface);border:1px solid var(--line);border-radius:6px;overflow:hidden}.project-video iframe{display:block;width:100%;height:100%;border:0}
+
+.project-video{position:relative}.project-video iframe{position:relative;z-index:1;visibility:hidden}.video-fallback{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;padding:24px;text-align:center}.video-fallback[hidden]{display:none}.video-fallback p{max-width:400px;color:var(--muted)}
