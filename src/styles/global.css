@@ -515,6 +515,141 @@ h1 em {
     transform: translate(3px, -3px)
 }
 
+.tools-section {
+    margin-top: 72px;
+    padding-top: 38px;
+    border-top: 1px solid var(--line)
+}
+
+.tools-heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 24px
+}
+
+.tools-heading h3 {
+    font-size: 22px;
+    letter-spacing: -.5px
+}
+
+.tool-card {
+    width: min(100%, 340px);
+    overflow: hidden;
+    border: 1px solid var(--line);
+    background: var(--bg)
+}
+
+.tool-card-no-image {
+    align-self: start
+}
+
+.tool-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 340px));
+    gap: 20px
+}
+
+.tool-screenshot {
+    aspect-ratio: 16 / 9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: var(--muted);
+    background: var(--surface);
+    border-bottom: 1px solid var(--line);
+    font-size: 11px;
+    letter-spacing: 1.5px
+}
+
+.tool-screenshot-image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+    background: var(--surface);
+    border-bottom: 1px solid var(--line)
+}
+
+.tool-screenshot-tall {
+    object-fit: cover;
+    object-position: top
+}
+
+.tool-screenshot small {
+    font-size: 11px;
+    letter-spacing: 0
+}
+
+.tool-content {
+    padding: 16px
+}
+
+.tool-content .eyebrow {
+    margin-bottom: 8px;
+    font-size: 10px
+}
+
+.tool-content h4 {
+    font-size: 18px
+}
+
+.tool-content .tool-title {
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.tool-title img {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+    border-radius: 7px
+}
+
+.tool-content>p:not(.eyebrow) {
+    margin-top: 9px;
+    color: var(--muted);
+    font-size: 14px
+}
+
+.tool-description {
+    margin-top: 12px
+}
+
+.tool-credit a {
+    text-decoration: underline;
+    text-underline-offset: 3px
+}
+
+.tool-description summary {
+    color: var(--accent);
+    cursor: pointer;
+    font-size: 13px
+}
+
+.tool-description p {
+    margin-top: 10px;
+    color: var(--muted);
+    font-size: 14px
+}
+
+.tool-description .hide-description,
+.tool-description[open] .show-description {
+    display: none
+}
+
+.tool-description[open] .hide-description {
+    display: inline
+}
+
+.tool-content .tags {
+    margin-top: 16px
+}
+
 .project-content>p:not(.eyebrow) {
     color: var(--muted);
     font-size: 14px;
