@@ -10,8 +10,13 @@ human commit author.
 
 - User requested publication of the pending cluster card/image and shared agent
   guidance. Reviewed the pending files; all were created by Codex in this chat.
-- Prior build and visual checks passed. Preparing a commit with `Agent: Codex`;
-  push and deployment outcome must be checked separately after the commit.
+- Prior build and visual checks passed. Committed as `71a8c52`, including the
+  shared agent guidance, with `Agent: Codex` attribution.
+- Publication blocked: HTTPS Git push has no credentials; GitHub CLI is absent.
+  The connected GitHub integration also rejected a Git blob write with HTTP 403
+  `Resource not accessible by integration`. No remote changes or deployment made.
+- Commit this outcome note separately so a normal authenticated `git push origin
+  main` can publish all pending commits. Do not recreate the application changes.
 
 ## 2026-11-11 — Codex — Three-board cluster image and description
 
