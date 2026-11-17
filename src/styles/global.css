@@ -637,10 +637,12 @@ h1 em {
     font-size: 14px
 }
 
-.tool-image-credit {
-    padding: 6px 16px 0;
-    color: var(--muted);
-    font-size: 11px
+#jetson-gpu-cluster > a {
+    display: block
+}
+
+#jetson-gpu-cluster > a:focus-visible {
+    outline-offset: -4px
 }
 
 .tool-description .hide-description,

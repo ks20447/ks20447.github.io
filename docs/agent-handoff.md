@@ -6,6 +6,18 @@ changed files, checks, pending work and commit/push status. Keep roughly ten rec
 entries; use Git history for older details. Do not infer agent identity from the
 human commit author.
 
+## 2026-11-17 — Codex — Jetson cluster dashboard refresh
+
+- Follow-up: moved the visible Jetson summary into the expandable description
+  in `src/pages/index.astro` so both paragraphs start hidden.
+- Follow-up: moved the SuperiorPaper attribution and link into its expandable
+  description. The production build and `git diff --check` passed.
+- Updated the existing Custom Tools placard from the latest export with its
+  summary, description, Python tag and dashboard screenshot. The screenshot
+  opens at full size when selected. The previous illustration remains on disk.
+- Verified the screenshot, summary and description expansion in the local
+  preview. The user requested a local commit for these changes.
+
 ## 2026-11-11 — Codex — Publication requested
 
 - User requested publication of the pending cluster card/image and shared agent
